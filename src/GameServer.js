@@ -65,7 +65,7 @@ function GameServer() {
         serverMaxConnections: 64, // Maximum amount of connections to the server.
         serverPort: 443, // Server port
         serverGamemode: 0, // Gamemode, 0 = FFA, 1 = Teams
-        serverBots: 0, // Amount of player bots to spawn
+        serverBots: 1, // Amount of player bots to spawn
         serverViewBaseX: 1024, // Base view distance of players. Warning: high values may cause lag
         serverViewBaseY: 592,
         serverStatsPort: 88, // Port for stats server. Having a negative number will disable the stats server.
