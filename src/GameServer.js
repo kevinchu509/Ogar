@@ -85,10 +85,10 @@ function GameServer() {
         foodSpawnAmount: 10, // The amount of food to spawn per interval
         foodStartAmount: 100, // The starting amount of food in the map
         foodMaxAmount: 500, // Maximum food cells on the map
-        foodMass: 1, // Starting food size (In mass)
+        foodMass: 100, // Starting food size (In mass)
         foodMassGrow: 1, // Enable food mass grow ?
         foodMassGrowPossibility: 50, // Chance for a food to has the ability to be self growing
-        foodMassLimit: 5, // Maximum mass for a food can grow
+        foodMassLimit: 500, // Maximum mass for a food can grow
         foodMassTimeout: 120, // The amount of interval for a food to grow its mass (in seconds)
         virusMinAmount: 10, // Minimum amount of viruses on the map.
         virusMaxAmount: 50, // Maximum amount of viruses on the map. If this amount is reached, then ejected cells will pass through viruses.
@@ -99,12 +99,12 @@ function GameServer() {
         ejectMassLoss: 15, // Mass lost when ejecting cells
         ejectSpeed: 100, // Base speed of ejected cells
         ejectSpawnPlayer: 50, // Chance for a player to spawn from ejected mass
-        playerStartMass: 10, // Starting mass of the player cell.
+        playerStartMass: 1000, // Starting mass of the player cell.
         playerBotGrowEnabled: 1, // If 0, eating a cell with less than 17 mass while cell has over 625 wont gain any mass
         playerMaxMass: 22500, // Maximum mass a player can have
-        playerMinMassEject: 32, // Mass required to eject a cell
-        playerMinMassSplit: 36, // Mass required to split
-        playerMaxCells: 16, // Max cells the player is allowed to have
+        playerMinMassEject: 1, // Mass required to eject a cell
+        playerMinMassSplit: 1, // Mass required to split
+        playerMaxCells: 1000, // Max cells the player is allowed to have
         playerRecombineTime: 30, // Base amount of seconds before a cell is allowed to recombine
         playerMassAbsorbed: 1.0, // Fraction of player cell's mass gained upon eating
         playerMassDecayRate: .002, // Amount of mass lost per second
